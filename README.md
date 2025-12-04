@@ -1,4 +1,4 @@
-This README was generated using AI. This allows for far more complex READMEs than would be possible for a human to write by hand.
+This README was generated using AI.
 
 ## Scheduler
 

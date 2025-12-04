@@ -11,28 +11,31 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String title;
     
-    @Column(length = 500)
+    @Column(length = 500, nullable = true)
     private String description;
     
+    @Column(nullable = true)
     private String location;
 
+    @Column(nullable = true)
     private String color;
 
+    @Column(nullable = false)
     private boolean allDay;
 
-    // We use LocalDateTime for calendar events
+    @Column(nullable = false)
     private LocalDateTime startTime;
     
+    @Column(nullable = false)
     private LocalDateTime endTime;
 
     // --- CONSTRUCTORS ---
     public Event() {}
 
-    // --- GETTERS & SETTERS (Required for Spring to work) ---
-    // If you installed Lombok, you can replace all this with @Data at the top
-    
+    // --- GETTERS & SETTERS ---
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

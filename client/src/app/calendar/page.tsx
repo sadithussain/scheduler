@@ -28,6 +28,7 @@ const CalendarPage = () => {
       ),
       desc: "If you see this, the calendar works!",
       location: "Localhost",
+      allDay: false,
     },
     {
       title: "All Day Holiday",
